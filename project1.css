@@ -18,7 +18,7 @@ header{
 .header{
     display: flex;
     align-items: center;
-    position: sticky;
+    position: fixed;
 }
 .logo{
     flex-basis: 60%;
@@ -50,7 +50,7 @@ header{
 .information{
     width: 800px;
     height: 800px;
-    position: absolute;
+    position:absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
