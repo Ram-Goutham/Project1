@@ -1,0 +1,25 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-color: blueviolet;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.26);
+    height:50px;
+    border: 1px solid red;
+}
+.header{
+    display: flex;
+}
+.logo img{
+    height:30px;
+    width:25px;
+}
+.list ul{
+    display:flex;
+}
