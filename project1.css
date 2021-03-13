@@ -4,7 +4,7 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     background-color: blueviolet;
@@ -39,7 +39,7 @@ header{
 }
 .list ul li a{
     color:white;
-
+    font-size: 17px;
 }
 .list ul li:hover{
     background-color: rgba(255, 255, 255, 0.527);
