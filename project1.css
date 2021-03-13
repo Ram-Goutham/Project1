@@ -13,11 +13,12 @@ header{
     background-color: rgba(255, 255, 255, 0.137);
     height:50px;
     z-index: 1;
+    width: 100%;
 }
 .header{
     display: flex;
     align-items: center;
-    position:fixed;
+    position: sticky;
 }
 .logo{
     flex-basis: 60%;
@@ -51,12 +52,12 @@ header{
     height: 800px;
     position: absolute;
     top: 50%;
-    left: -10%;
+    left: 0;
     transform: translateY(-50%);
 }
 .circle{
-    width: 1000px;
-    height: 1000px;
+    width: 800px;
+    height: 800px;
     position: absolute;
     top: 0;
     left: 0;
@@ -65,24 +66,61 @@ header{
 
 }
 .feature img{
-    width: 70px;
+    width: 60px;
 }
 .feature{
     position: absolute;
+    display: flex;
+    color: white;
+}
+.feature div{
+    margin-left: 30px;
+}
+.feature div p{
+    margin-top: 6px;
 }
 .one{
-    top:450px;
+    top:350px;
     right: 50px;
 }
 .two{
-    top:150px;
+    top:100px;
     left:350px;
 }
 .three{
-    bottom:450px;
+    bottom: 400px;
     left: 50px;
 }
 .four{
-    bottom:150px;
-    right: 350px;
+    bottom:100px;
+    right: 250px;
 }
+.controls{
+    position: absolute;
+    right: 10%;
+    top:50%;
+    transform: translateY(-50%);
+
+}
+.controls h3{
+
+}
+
+#upBtn{
+    width: 15px;
+    cursor: pointer;
+}
+#downBtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
