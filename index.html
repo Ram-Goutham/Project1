@@ -32,7 +32,9 @@
     </header>
     <main>
         <div class="information">
-            <div class="circle">
+            <div class="overlay"></div>
+            <div id="circle">
+
                 <!-- camera processor display battery -->
                 <div class="feature one">
                     <img src="person.png" alt="">
@@ -66,7 +68,7 @@
         </div>
         <div class="controls">
             <img src="arrow.png" alt="" id="upBtn">
-            <h3>Profile</h3>
+            <h3>PROFILE</h3>
             <img src="arrow.png" alt="" id="downBtn">
         </div>
 
@@ -74,5 +76,24 @@
     <footer>
 
     </footer>
+    <script>
+        let circle = document.getElementById("circle");
+        let upBtn = document.getElementById("upBtn");
+        let downBtn = document.getElementById("downBtn");
+        let rotateValue = circle.style.transform;
+        let rotateSum;
+
+        upBtn.onclick = function(){
+            circle.style.transform = rotateValue + "rotate(-90deg)";
+            rotateValue = circle.style.transform;
+
+        }
+        downBtn.onclick = function(){
+            circle.style.transform = rotateValue + "rotate(90deg)";
+            rotateValue = circle.style.transform;
+        }
+
+
+    </script>
 </body>
 </html>
